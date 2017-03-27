@@ -14,10 +14,6 @@ class GroupsController < ApplicationController
   end
 
   def edit
-
-    end
-
-
   end
 
   def create
@@ -40,8 +36,6 @@ class GroupsController < ApplicationController
   end
 
   def destroy
-
-    end
     @group.destroy
     flash[:alert] = "Group deleted"
     redirect_to groups_path
